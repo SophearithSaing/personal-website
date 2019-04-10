@@ -1,0 +1,62 @@
+body {
+    /* Font */
+    font-family: 'Zilla Slab';font-size: 22px;
+    }
+.parallax { 
+    /* The image used */
+    background: url("background.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Text color */
+    color: white;
+   }
+.project { 
+    /* The image used */
+    background: url("project-background.jpg");
+
+    /* Set a specific height */
+    /* height: 400px;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Text color */
+    color: white;
+   }
+.black {
+    color: black;
+}
+ul {
+    list-style-type: none;
+}
+.parallax-effect {
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Text color */
+    color: white;
+}
+
+.navbar.scrolled {
+    background: black;
+}
+
+   
+   
