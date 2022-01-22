@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Experimental portfolio website with tailwindcss and jquery",
+  "main": "index.js",
+  "scripts": {
+    "build-tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophearithSaing/portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "Sophearith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SophearithSaing/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/SophearithSaing/portfolio-website#readme",
+  "dependencies": {
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15"
+  }
+}
