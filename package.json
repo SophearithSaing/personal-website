@@ -1,24 +1,39 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
-  "description": "Experimental portfolio website with tailwindcss and jquery",
-  "main": "index.js",
-  "scripts": {
-    "build-tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SophearithSaing/portfolio-website.git"
-  },
-  "keywords": [],
-  "author": "Sophearith",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SophearithSaing/portfolio-website/issues"
-  },
-  "homepage": "https://github.com/SophearithSaing/portfolio-website#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "sass": "^1.49.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
