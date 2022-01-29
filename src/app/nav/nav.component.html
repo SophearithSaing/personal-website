@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [ngClass]="{hidden:  (isHandset$ | async) === false}"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-nav-list>
+      <mat-list-item>
+        <button mat-button routerLink="/elder-home" routerLinkActive="mat-raised-button">Home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/elder-profile" routerLinkActive="mat-raised-button">Project</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/elder-profile" routerLinkActive="mat-raised-button">Code</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/requests-status" routerLinkActive="mat-raised-button">Contact</button>
+      </mat-list-item>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="background: white; color: black;">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <span class="spacer"></span>
+      <button mat-button routerLink="/elder-home" routerLinkActive="mat-raised-button"
+        [ngClass]="{hidden:  (isHandset$ | async) === true}" class="nav">Home</button>
+      <button mat-button routerLink="/requests-status" routerLinkActive="mat-raised-button"
+        [ngClass]="{hidden:  (isHandset$ | async) === true}" class="nav">Projects</button>
+      <button mat-button routerLink="/history" routerLinkActive="mat-raised-button"
+        [ngClass]="{hidden:  (isHandset$ | async) === true}" class="nav">Code</button>
+      <button mat-button routerLink="/history" routerLinkActive="mat-raised-button"
+        [ngClass]="{hidden:  (isHandset$ | async) === true}" class="nav">Contact</button>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
