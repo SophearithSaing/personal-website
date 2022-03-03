@@ -18,11 +18,12 @@
 
 .sidenav {
   width: 200px;
-}
-
-.sidenav {
   .mat-toolbar {
     background: inherit;
+  }
+  .mat-list-base {
+    padding: 0;
+    margin-top: 50px;
   }
 }
 
