@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+header {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header div a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header div a:hover {
+  border-bottom: 1px solid #ffffff;
+}
