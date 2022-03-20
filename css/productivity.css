@@ -1,0 +1,73 @@
+/* Todo List */
+.todo {
+  padding: 32px;
+}
+.todo h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.todo--add {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+}
+.todo--add__input {
+  flex-basis: 75%;
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid black;
+  border-right: none;
+  font-size: 16px;
+}
+.todo--add__button {
+  flex-basis: 25%;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 16px;
+}
+.todo--add__button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.todo--items {
+  max-width: 400px;
+  margin: auto;
+}
+.todo--item {
+  height: 24px;
+  margin-top: 16px;
+  padding: 16px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo--item__text {
+  flex-basis: calc(100% - 80px);
+}
+.todo--item__text.done {
+  text-decoration: line-through;
+  color: #aaaaaa;
+}
+.todo--item__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bi-check-lg {
+  font-size: 24px;
+}
+.bi-check-lg:hover {
+  color: #28a745;
+}
+.bi-arrow-counterclockwise:hover {
+  color: #ffc107;
+}
+.bi-trash3:hover {
+  color: #dc3545;
+}
