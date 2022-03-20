@@ -39,3 +39,12 @@ header div a.active {
   padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
 }
+
+.icon-attr {
+  width: fit-content;
+  color: #000000;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
