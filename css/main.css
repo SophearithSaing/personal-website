@@ -22,11 +22,13 @@ header h1 {
   font-size: 24px;
 }
 
-header div a {
+header a {
   text-decoration: none;
   color: #ffffff;
 }
 
-header div a:hover {
+header div a:hover,
+header div a.active {
+  padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
 }
