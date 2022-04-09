@@ -10,9 +10,6 @@
 *::after {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: 'Cascadia Code', monospace, sans-serif;
 }
 
@@ -38,6 +35,14 @@ header div a:hover,
 header div a.active {
   padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 16px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 .icon-attr {
