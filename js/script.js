@@ -1,18 +1,42 @@
 const addTodoItem = () => {
   const html = `
-      <div class="todo--item" style="display: none;">
-        <p class="todo--item__text">${$('.todo--add__input').val()}</p>
-        <i class="bi bi-check-lg"></i>
-        <i class="bi bi-arrow-counterclockwise" style="display: none"></i>
-        <i class="bi bi-trash3"></i>
+      <div class="todo--item-container" style="display: none;">
+        <div class="todo--item card">
+          <p class="todo--item__text">${$('.todo--add__input').val()}</p>
+          <i class="bi bi-hourglass-split"></i>
+          <i class="bi bi-check-lg"></i>
+          <i class="bi bi-arrow-counterclockwise" style="display: none"></i>
+          <i class="bi bi-trash3"></i>
+        </div>
+        <div class="todo--pomodoro card" style="display: none;">
+          <p>30:30</p>
+        </div>
       </div>
     `;
   $('.todo--items').append(html);
-  $('.todo--item').last().fadeIn({ duration: 200 });
+  $('.todo--item-container').last().fadeIn({ duration: 200 });
   $('.todo--add__input').val('');
+
+  unbindIconEvents();
+  bindIconEvents();
 };
 
-const bindEvent = () => {
+const unbindIconEvents = () => {
+  $(
+    '.bi-hourglass-split, .bi-check-lg, .bi-arrow-counterclockwise, .bi-trash3'
+  ).off();
+};
+
+const bindIconEvents = () => {
+  $('.bi-hourglass-split').on('click', function () {
+    $(this)
+      .parent('.todo--item')
+      .first()
+      .siblings('.todo--pomodoro')
+      .first()
+      .slideToggle();
+  });
+
   $('.bi-check-lg').on('click', function () {
     $(this).siblings('.todo--item__text').addClass('done');
     $(this).fadeOut({ duration: 200 });
@@ -40,15 +64,13 @@ const bindEvent = () => {
 $(() => {
   $('.todo--add__button').on('click', () => {
     addTodoItem();
-    bindEvent();
   });
 
   $('.todo--add__input').on('keyup', (event) => {
     if (event.key === 'Enter') {
       addTodoItem();
-      bindEvent();
     }
   });
 
-  bindEvent();
+  bindIconEvents();
 });

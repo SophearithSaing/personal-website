@@ -37,18 +37,13 @@
 }
 .todo--item {
   height: 24px;
-  margin-top: 16px;
-  padding: 16px 16px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .todo--item__text {
-  flex-basis: calc(100% - 80px);
+  flex-basis: calc(100% - 100px);
 }
 .todo--item__text.done {
   text-decoration: line-through;
@@ -59,11 +54,14 @@
   align-items: center;
   gap: 20px;
 }
+.bi-hourglass-split:hover {
+  color: #0d6efd;
+}
 .bi-check-lg {
   font-size: 24px;
 }
 .bi-check-lg:hover {
-  color: #28a745;
+  color: #198754;
 }
 .bi-arrow-counterclockwise:hover {
   color: #ffc107;
