@@ -29,6 +29,7 @@ header h1 {
 header a {
   text-decoration: none;
   color: #ffffff;
+  margin: 0 5px;
 }
 
 header div a:hover,
