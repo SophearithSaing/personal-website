@@ -25,49 +25,12 @@
       </div>
     </header>
 
-    <pre>
-      <code class="json hljs">
-        {
-          "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
-          "guid": "{e794cec8-2fbc-4b3f-bca7-e1d8f3cd4fe3}",
-          "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
-          "name": "Git Bash",
-          "startingDirectory": "%USERPROFILE%",
-          "suppressApplicationTitle": true
-        }
-        {
-          "command": {
-            "action": "splitPane",
-            "profile": "{e794cec8-2fbc-4b3f-bca7-e1d8f3cd4fe3}",
-            "split": "auto"
-          },
-          "keys": "alt+d"
-        }
-      </code>
-    </pre>
-
-    <pre>
-      <code class="shell hljs">
-      # add permissions
-      chmod +rwx file-name/directory-name
-      
-      # remove permissions
-      chmod -rwx directoryname
-      
-      # add executable permissions
-      chmod +x filename
-
-      # change owner (-R = recursive -> apply to all subdirectories)
-      chown -R user file
-      chown -R user:group file 
-      </code>
-    </pre>
+    <div class="snippets"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/json.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/shell.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script src="/js/script.js" type="module"></script>
   </body>
 </html>

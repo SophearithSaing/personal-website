@@ -1,3 +1,5 @@
+import { snippets } from './data.js';
+
 const addTodoItem = () => {
   const html = `
       <div class="todo--item-container" style="display: none;">
@@ -73,4 +75,16 @@ $(() => {
   });
 
   bindIconEvents();
+
+  snippets.forEach((snippet) => {
+    const html = `
+      <pre>
+        <code class="${snippet.language}">
+          ${snippet.code}
+        </code>
+      </pre>
+    `;
+    $('.snippets').append(html);
+  });
+  hljs.highlightAll();
 });
