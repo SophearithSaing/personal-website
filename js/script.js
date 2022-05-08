@@ -78,12 +78,14 @@ $(() => {
 
   snippets.forEach((snippet) => {
     const html = `
-      <h2>${snippet.title}</h2>
-      <pre>
-        <code>
-          ${snippet.code}
-        </code>
-      </pre>
+      <div class="snippets__item">
+        <h2>${snippet.title}</h2>
+        <pre>
+          <code>
+            ${snippet.code}
+          </code>
+        </pre>
+      </div>
     `;
     $('.snippets').append(html);
   });

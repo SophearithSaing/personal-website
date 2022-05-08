@@ -10,6 +10,7 @@ export const snippets = [
   {
     title: 'Add git bash to Windows Terminal',
     category: 'config',
+    language: 'json',
     code: `
       {
         "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
@@ -31,6 +32,7 @@ export const snippets = [
   {
     title: 'Change file Permission and Ownership on Linux',
     category: 'linux',
+    language: 'shell',
     code: `
       # add permissions
       chmod +rwx file-name/directory-name
@@ -48,6 +50,7 @@ export const snippets = [
   {
     title: '.jsconfig for jQuery',
     category: 'config',
+    language: 'json',
     code: `
       {
         "typeAcquisition": {
@@ -58,6 +61,7 @@ export const snippets = [
   {
     title: 'My local .prettierrc for js',
     category: 'config',
+    language: 'json',
     code: `
       {
         "arrowParens": "always",
