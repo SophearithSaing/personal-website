@@ -1,0 +1,13 @@
+.snippets {
+  margin: 24px 16px;
+}
+
+.snippets h2 {
+  font-size: 20px;
+}
+
+pre code.hljs {
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 20px;
+}

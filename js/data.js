@@ -30,7 +30,7 @@ export const snippets = [
   },
   {
     id: 1,
-    name: 'Change file Permission and Ownership on Linux',
+    title: 'Change file Permission and Ownership on Linux',
     code: `
       # add permissions
       chmod +rwx file-name/directory-name

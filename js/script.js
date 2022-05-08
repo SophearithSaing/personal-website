@@ -78,13 +78,17 @@ $(() => {
 
   snippets.forEach((snippet) => {
     const html = `
+      <h2>${snippet.title}</h2>
       <pre>
-        <code class="${snippet.language}">
+        <code>
           ${snippet.code}
         </code>
       </pre>
     `;
     $('.snippets').append(html);
   });
-  hljs.highlightAll();
+
+  if ($(document).attr('title') === 'Snippets') {
+    hljs.highlightAll();
+  }
 });
