@@ -8,8 +8,8 @@ export const projects = [
 
 export const snippets = [
   {
-    id: 0,
     title: 'Add git bash to Windows Terminal',
+    category: 'config',
     code: `
       {
         "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
@@ -29,8 +29,8 @@ export const snippets = [
       }`,
   },
   {
-    id: 1,
     title: 'Change file Permission and Ownership on Linux',
+    category: 'linux',
     code: `
       # add permissions
       chmod +rwx file-name/directory-name
@@ -44,5 +44,40 @@ export const snippets = [
       # change owner (-R = recursive -> apply to all subdirectories)
       chown -R user file
       chown -R user:group file`,
+  },
+  {
+    title: '.jsconfig for jQuery',
+    category: 'config',
+    code: `
+      {
+        "typeAcquisition": {
+          "include": ["jquery"]
+        }
+      }`,
+  },
+  {
+    title: 'My local .prettierrc for js',
+    category: 'config',
+    code: `
+      {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "endOfLine": "lf",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": false,
+        "printWidth": 80,
+        "proseWrap": "preserve",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false,
+        "vueIndentScriptAndStyle": false,
+        "parser": "babel",
+      }`,
   },
 ];
