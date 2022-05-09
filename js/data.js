@@ -84,4 +84,13 @@ export const snippets = [
         "parser": "babel",
       }`,
   },
+  {
+    title: 'Check serial number on Linux (Manjaro)',
+    category: 'linux',
+    language: 'shell',
+    code: `
+      pacman -S dmidecode # if command is not found
+      dmidecode -s system-serial-number
+    `,
+  },
 ];
