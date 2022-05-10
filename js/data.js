@@ -98,7 +98,15 @@ export const snippets = [
     category: 'linux',
     language: 'shell',
     code: `
-      kquitapp5 plasmashell && kstart5 plasmashell
+      # for KDE 4
+      killall plasma-desktop && kstart plasma-desktop #to restart it
+      
+      # for KDE 5    
+      killall plasmashell && kstart plasmashell #to restart it
+      
+      # for KDE > 5.10
+      kquitapp5 plasmashell && kstart5 plasmashell # option 1
+      killall plasmashell && kstart5 plasmashell # option 2
     `,
   },
 ];
