@@ -93,4 +93,12 @@ export const snippets = [
       dmidecode -s system-serial-number
     `,
   },
+  {
+    title: 'Restart Plasma',
+    category: 'linux',
+    language: 'shell',
+    code: `
+      kquitapp5 plasmashell && kstart5 plasmashell
+    `,
+  },
 ];
