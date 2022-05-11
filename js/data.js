@@ -1,8 +1,15 @@
 export const projects = [
   {
-    id: 0,
-    name: 'React Football',
-    technology: ['React', 'Material UI'],
+    name: 'Media Journal',
+    technology: ['Angular', 'Nebular', 'Firebase'],
+  },
+  {
+    name: 'Football',
+    technology: ['React', 'Ionic'],
+  },
+  {
+    name: 'Word-chain',
+    technology: ['React'],
   },
 ];
 
