@@ -106,10 +106,10 @@ export const snippets = [
     language: 'shell',
     code: `
       # for KDE 4
-      killall plasma-desktop && kstart plasma-desktop #to restart it
+      killall plasma-desktop && kstart plasma-desktop
       
       # for KDE 5    
-      killall plasmashell && kstart plasmashell #to restart it
+      killall plasmashell && kstart plasmashell
       
       # for KDE > 5.10
       killall plasmashell && kstart5 plasmashell
