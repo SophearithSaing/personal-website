@@ -12,6 +12,25 @@
   font-size: 20px;
 }
 
+.snippets__item pre {
+  position: relative;
+}
+
+.snippets__item .bi {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.snippets__item p {
+  display: none;
+}
+
 pre code.hljs {
   padding: 0 24px 0 0 !important;
   font-size: 14px;

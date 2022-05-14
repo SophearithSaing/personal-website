@@ -61,6 +61,11 @@ const bindIconEvents = () => {
       $(this).parent('.todo--item').remove();
     }, 200);
   });
+
+  $('.bi-clipboard').on('click', function () {
+    const snippet = $(this).parents('.snippets__item').children('p').text();
+    navigator.clipboard.writeText(snippet);
+  });
 };
 
 $(() => {
@@ -74,13 +79,15 @@ $(() => {
     }
   });
 
-  bindIconEvents();
-
   snippets.forEach((snippet) => {
     const html = `
       <div class="snippets__item">
         <h2>${snippet.title}</h2>
+        <p>
+          ${snippet.code}
+        </p>
         <pre>
+          <i class="bi bi-clipboard"></i>
           <code>
             ${snippet.code}
           </code>
@@ -89,6 +96,8 @@ $(() => {
     `;
     $('.snippets').append(html);
   });
+
+  bindIconEvents();
 
   if ($(document).attr('title') === 'Snippets') {
     hljs.highlightAll();
