@@ -6,12 +6,12 @@
   text-align: center;
   margin-bottom: 16px;
 }
-.todo--add {
+.todo__add {
   max-width: 400px;
   margin: auto;
   display: flex;
 }
-.todo--add__input {
+.todo__add--input {
   flex-basis: 75%;
   padding: 8px 16px;
   outline: none;
@@ -19,7 +19,7 @@
   border-right: none;
   font-size: 16px;
 }
-.todo--add__button {
+.todo__add--button {
   flex-basis: 25%;
   padding: 8px 16px;
   background: transparent;
@@ -27,29 +27,29 @@
   cursor: pointer;
   font-size: 16px;
 }
-.todo--add__button:hover {
+.todo__add--button:hover {
   background: #000000;
   color: #ffffff;
 }
-.todo--items {
+.todo__items {
   max-width: 400px;
   margin: auto;
 }
-.todo--item {
+.todo__item {
   height: 24px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.todo--item__text {
+.todo__item--text {
   flex-basis: calc(100% - 100px);
 }
-.todo--item__text.done {
+.todo__item--text.done {
   text-decoration: line-through;
   color: #aaaaaa;
 }
-.todo--item__icons {
+.todo__item--icons {
   display: flex;
   align-items: center;
   gap: 20px;
