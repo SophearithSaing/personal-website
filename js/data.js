@@ -112,7 +112,8 @@ export const snippets = [
       killall plasmashell && kstart plasmashell
       
       # for KDE > 5.10
-      killall plasmashell && kstart5 plasmashell
+      kquitapp5 plasmashell && kstart5 plasmashell # option 1
+      killall plasmashell && kstart5 plasmashell # option 2
     `,
   },
 ];
