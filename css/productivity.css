@@ -41,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .todo__item--text {
   flex-basis: calc(100% - 100px);
@@ -68,4 +69,14 @@
 }
 .bi-trash3:hover {
   color: #dc3545;
+}
+.pomodoro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.pomodoro__timer {
+  flex: 1;
+  font-size: 24px;
 }
