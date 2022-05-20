@@ -116,4 +116,13 @@ export const snippets = [
       killall plasmashell && kstart5 plasmashell # option 2
     `,
   },
+  {
+    title: 'Open VS Code on Manjaro in X11 session',
+    category: 'linux',
+    language: 'shell',
+    code: `
+      # Disable GPU acceleration
+      code --disable-gpu
+    `,
+  },
 ];
