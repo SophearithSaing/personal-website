@@ -51,8 +51,8 @@ export const snippets = [
       chmod +x filename
 
       # change owner (-R = recursive -> apply to all subdirectories)
-      chown -R user file
-      chown -R user:group file`,
+      chown -R user file-name/directory-name
+      chown -R user:group file-name/directory-name`,
   },
   {
     title: '.jsconfig for jQuery',
