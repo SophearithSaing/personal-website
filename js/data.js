@@ -135,4 +135,14 @@ export const snippets = [
       gap: 15px;
     `,
   },
+  {
+    title: 'Import json file in the browser',
+    category: 'code',
+    language: 'js',
+    code: `
+      fetch('./data.json')
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    `,
+  },
 ];
