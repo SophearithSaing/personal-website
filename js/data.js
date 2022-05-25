@@ -125,4 +125,14 @@ export const snippets = [
       code --disable-gpu
     `,
   },
+  {
+    title: 'CSS responsive grid',
+    category: 'code',
+    language: 'css',
+    code: `
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+    `,
+  },
 ];
