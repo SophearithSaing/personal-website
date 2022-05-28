@@ -145,4 +145,15 @@ export const snippets = [
         .then((data) => console.log(data));
     `,
   },
+  {
+    title: 'JavaScript currency format',
+    category: 'code',
+    language: 'js',
+    code: `
+      number.toLocaleString('th-TH', {
+        style: 'currency',
+        currency: 'THB',
+      });
+    `,
+  },
 ];
