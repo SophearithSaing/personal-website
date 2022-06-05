@@ -167,4 +167,22 @@ export const snippets = [
       });
     `,
   },
+  {
+    title: 'Perspective card flip',
+    category: 'code',
+    language: 'js',
+    code: `
+      .card {
+          height: 100px;
+          perspective: 1500px;
+          transition: all .5s;
+      }
+      .card:hover .card__side--front {
+          transform: rotateY(-180deg);
+      }
+      .card:hover .card__side--back {
+          transform: rotateY(0);
+      }
+    `,
+  },
 ];
