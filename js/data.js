@@ -185,4 +185,16 @@ export const snippets = [
       }
     `,
   },
+  {
+    title: 'Pacman commands',
+    category: 'linux',
+    language: 'shell',
+    code: `
+      pacman -Syu <pkg>	Install (and update package list)
+      pacman -S <pkg>	Install only
+      pacman -Rsc <pkg>	Uninstall
+      pacman -Ss <keywords>	Search
+      pacman -Syu	Upgrade everything
+    `,
+  },
 ];
