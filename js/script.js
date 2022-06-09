@@ -11,7 +11,8 @@ const addTodoItem = () => {
           <i class="bi bi-trash3"></i>
         </div>
         <div class="pomodoro card" style="display: none;">
-          <p>30:30</p>
+          <p class="pomodoro__timer"><span class="minute">25</span>:<span class="second">00</span></p>
+          <i class="bi bi-play-fill"></i>
         </div>
       </div>
     `;
