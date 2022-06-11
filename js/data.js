@@ -190,11 +190,11 @@ export const snippets = [
     category: 'linux',
     language: 'shell',
     code: `
-      pacman -Syu <pkg>	Install (and update package list)
-      pacman -S <pkg>	Install only
-      pacman -Rsc <pkg>	Uninstall
-      pacman -Ss <keywords>	Search
-      pacman -Syu	Upgrade everything
+      pacman -Syu <pkg>	#install (and update package list)
+      pacman -S <pkg>	#install only
+      pacman -Rsc <pkg>	#ininstall
+      pacman -Ss <keywords>	#search
+      pacman -Syu	#upgrade everything
     `,
   },
 ];
