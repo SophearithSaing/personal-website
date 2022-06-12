@@ -117,26 +117,6 @@ export const snippets = [
     `,
   },
   {
-    title: 'Open VS Code on Manjaro in X11 session',
-    category: 'linux',
-    language: 'shell',
-    code: `
-      # disable GPU acceleration
-      code --disable-gpu
-    `,
-  },
-  {
-    title: 'Set alias in Linux',
-    category: 'linux',
-    language: 'shell',
-    code: `
-      # Disable GPU acceleration
-      alias # list all alias
-      alias name="custom command" # set new alias with custom command
-      alias code-ng="code --disable-gpu" # example: set alias "code-ng" to run command "code --disable-gpu"
-    `,
-  },
-  {
     title: 'CSS responsive grid',
     category: 'code',
     language: 'css',
