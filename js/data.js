@@ -55,6 +55,23 @@ export const snippets = [
       chown -R user:group file-name/directory-name`,
   },
   {
+    title: 'Xampp/Lampp commands on Linux',
+    category: 'linux',
+    language: 'shell',
+    code: `
+      # server status
+      sudo /opt/lampp/lampp status
+      
+      # start server
+      sudo /opt/lampp/lampp start
+
+      # stop server
+      sudo /opt/lampp/lampp stop
+
+      # restart server
+      sudo /opt/lampp/lampp restart`,
+  },
+  {
     title: '.jsconfig for jQuery',
     category: 'config',
     language: 'json',
