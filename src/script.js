@@ -27,7 +27,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
   });
   textGeometry.center();
 
-  const material = new THREE.MeshMatcapMaterial({ color: '0xffffff' });
+  const material = new THREE.MeshMatcapMaterial();
   const text = new THREE.Mesh(textGeometry, material);
   scene.add(text);
 
