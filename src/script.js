@@ -36,7 +36,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     const donut = new THREE.Mesh(torusGeometry, material);
 
     donut.position.x = (Math.random() - 0.5) * 10;
-    donut.position.y = (Math.random() - 0.5) * 10;
+    donut.position.y = Math.random() * 10;
     donut.position.z = (Math.random() - 0.5) * 10;
 
     donut.rotation.x = Math.random() * Math.PI;
@@ -46,6 +46,19 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     donut.scale.set(scale, scale, scale);
 
     scene.add(donut);
+
+    const clock = new THREE.Clock();
+    const falling = () => {
+      const elapsedTime = clock.getElapsedTime();
+
+      // Update objects
+      donut.position.y = donut.position.y - 0.001;
+
+      // Call tick again on the next frame
+      window.requestAnimationFrame(falling);
+    };
+
+    falling();
   }
 });
 
