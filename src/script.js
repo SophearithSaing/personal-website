@@ -47,10 +47,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
 
     scene.add(donut);
 
-    const clock = new THREE.Clock();
     const falling = () => {
-      const elapsedTime = clock.getElapsedTime();
-
       // Update objects
       donut.position.y = donut.position.y - 0.001;
 
