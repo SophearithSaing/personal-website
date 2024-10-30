@@ -1,13 +1,32 @@
 import * as THREE from 'three';
+import GUI from 'lil-gui';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+
+/**
+ * Base
+ */
+// Debug
+const gui = new GUI();
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
 
 // Scene
 const scene = new THREE.Scene();
+
+/**
+ * Lights
+ */
+const ambientLight = new THREE.AmbientLight(0xffffff, 0);
+scene.add(ambientLight);
+gui.add(ambientLight, 'intensity').min(0).max(2).step(0.1).name('Ambient Light');
+
+const pointLight = new THREE.PointLight(0xff0000, 1.5, 10, 3);
+pointLight.position.set(1, -0.5, 1);
+scene.add(pointLight);
+gui.add(pointLight, 'intensity').min(0).max(5).step(0.1).name('Point Light Intensity');
 
 /**
  * Fonts
@@ -27,7 +46,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
   });
   textGeometry.center();
 
-  const material = new THREE.MeshMatcapMaterial();
+  const material = new THREE.MeshStandardMaterial();
   const text = new THREE.Mesh(textGeometry, material);
   scene.add(text);
 
@@ -48,8 +67,13 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     scene.add(donut);
 
     const falling = () => {
+      const elapsedTime = clock.getElapsedTime();
+
       // Update objects
-      donut.position.y = donut.position.y - 0.001;
+      donut.position.y = donut.position.y - 0.003;
+      donut.rotation.x = donut.rotation.x - 0.005;
+      donut.rotation.y = donut.rotation.y - 0.005;
+      pointLight.position.x = Math.cos(elapsedTime);
 
       // Call tick again on the next frame
       window.requestAnimationFrame(falling);
